@@ -1,0 +1,29 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  events:
+    image: spring-contract-test-lab/events-ms:0.0.1-SNAPSHOT
+    ports:
+      - "8080:8080"
+    networks:
+      spring-contract-test-lab:
+        aliases:
+          - events.britebill.internal
+  sponsors:
+    image: spring-contract-test-lab/sponsors-ms:0.0.1-SNAPSHOT
+    ports:
+      - "8081:8080"
+    networks:
+      spring-contract-test-lab:
+        aliases:
+          - sponsors.britebill.internal
+  payments:
+    image: spring-contract-test-lab/payments-ms:0.0.1-SNAPSHOT
+    ports:
+      - "8082:8080"
+    networks:
+      spring-contract-test-lab:
+        aliases:
+          - payments.britebill.internal
+networks:
+  spring-contract-test-lab:
+
