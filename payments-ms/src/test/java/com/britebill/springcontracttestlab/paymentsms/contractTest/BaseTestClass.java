@@ -27,13 +27,4 @@
 //        RestAssuredMockMvc.standaloneSetup(paymentsController);
 //    }
 //
-//    public void isLocalDateTime(String localDateTime) {
-//        boolean parseAble = false;
-//        try {
-//            LocalDateTime.parse(localDateTime);
-//            parseAble = true;
-//        } catch (DateTimeParseException e) {
-//        }
-//        assert(parseAble);
-//    }
 //}
