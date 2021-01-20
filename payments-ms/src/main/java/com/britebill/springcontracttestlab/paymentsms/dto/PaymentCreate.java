@@ -19,5 +19,6 @@ public class PaymentCreate {
     protected String expiration;
     @NonNull @NotNull
     protected double amount;
+//    @NonNull @NotNull
     protected String note;
 }
